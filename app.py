@@ -12,7 +12,7 @@ def home():
     if 'usuario' not in session:
         return redirect('/login')
     
-    conexao = conexao.cursor()
+    cursor = conexao.cursor()
     
     if request.method == 'POST':
 
