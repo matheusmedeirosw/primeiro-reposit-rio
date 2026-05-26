@@ -5,10 +5,7 @@ app = Flask(__name__)
 app.secret_key = '123456'
 
 conexao = psycopg2.connect(
-    host="localhost",
-    database="controle_maquinas",
-    user="postgres",
-    password="Matheus@2009"
+    "postgresql://neondb_owner:npg_4ubpKiQO1gxV@ep-calm-sun-aqxrjddm-pooler.c-8.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 )
 @app.route('/', methods = ['GET', 'POST'])
 def home():
