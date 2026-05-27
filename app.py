@@ -61,7 +61,7 @@ def login():
             return redirect('/')
 
         else:
-            return "Usuário ou senha incorretos"
+            return "Usuário ou senha incorretos."
     return render_template('login.html')
 
 @app.route('/api/maquinas')
